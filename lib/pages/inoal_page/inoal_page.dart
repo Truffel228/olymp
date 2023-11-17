@@ -31,10 +31,10 @@ class _InitPageState extends State<InitPage> {
   @override
   void initState() {
     super.initState();
-    _init();
+    _strt();
   }
 
-  void _init() {
+  void _strt() {
     _sharedPrefs = context.read<SharedPreferences>();
     str(_sharedPrefs);
 

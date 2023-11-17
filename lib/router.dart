@@ -1,4 +1,4 @@
-import 'package:fin_assistant/models/news_item.dart';
+import 'package:fin_assistant/models/one_news_item.dart';
 import 'package:fin_assistant/pages/education_page/education_detailed_page.dart';
 import 'package:fin_assistant/pages/education_page/education_page.dart';
 import 'package:fin_assistant/pages/pages.dart';
@@ -23,8 +23,8 @@ class Routes {
   static const String news = '/news';
   static const String newsItem = '/newsItem';
 
-  static const String settings = '/settings';
-  static const String net = '/net';
+  static const String params = '/params';
+  static const String netted = '/netted';
 
   static GoRouter get router => GoRouter(
         navigatorKey: _parentNavigatorKey,
@@ -65,7 +65,7 @@ class Routes {
                     path: educationDetailed,
                     pageBuilder: (context, state) => MaterialPage(
                       child: EducationDetailedPage(
-                          course: state.extra as NewsItem),
+                          course: state.extra as OneNewsItem),
                     ),
                   ),
                   GoRoute(
@@ -113,23 +113,23 @@ class Routes {
             name: newsItem,
             path: newsItem,
             pageBuilder: (context, state) => MaterialPage(
-              child: NewsItemPage(
-                newsItem: state.extra as NewsItem,
+              child: OneNewsItemPage(
+                newsItem: state.extra as OneNewsItem,
               ),
             ),
           ),
           GoRoute(
-            name: settings,
-            path: settings,
+            name: params,
+            path: params,
             pageBuilder: (context, state) => const MaterialPage(
-              child: SettingsPage(),
+              child: ParamsPage(),
             ),
           ),
           GoRoute(
-            name: net,
-            path: net,
+            name: netted,
+            path: netted,
             pageBuilder: (context, state) => MaterialPage(
-              child: SorScreen(
+              child: NettedScreen(
                 s: state.extra as String,
               ),
             ),

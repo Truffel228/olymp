@@ -1,13 +1,13 @@
 import 'package:fin_assistant/app_theme.dart';
 import 'package:fin_assistant/build_context_ext.dart';
-import 'package:fin_assistant/models/news_item.dart';
+import 'package:fin_assistant/models/one_news_item.dart';
 import 'package:fin_assistant/router.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class ExtraNewCard extends StatelessWidget {
-  const ExtraNewCard({super.key, required this.newsItem});
-  final NewsItem newsItem;
+class AdditionalNewCard extends StatelessWidget {
+  const AdditionalNewCard({super.key, required this.newsItem});
+  final OneNewsItem newsItem;
 
   @override
   Widget build(BuildContext context) {

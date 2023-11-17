@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:fin_assistant/app_theme.dart';
-import 'package:fin_assistant/config.dart';
+import 'package:fin_assistant/configure.dart';
 import 'package:fin_assistant/notifx.dart';
 import 'package:fin_assistant/router.dart';
 import 'package:firebase_core/firebase_core.dart';

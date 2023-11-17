@@ -73,7 +73,7 @@ class _HomePageState extends State<HomePage> {
                     style: context.textTheme.displayLarge,
                   ),
                   InkWell(
-                    onTap: () => context.push(Routes.settings),
+                    onTap: () => context.push(Routes.params),
                     child: SvgPicture.asset('images/settings.svg'),
                   ),
                 ],

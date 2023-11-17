@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:fin_assistant/app_theme.dart';
 import 'package:fin_assistant/build_context_ext.dart';
 import 'package:fin_assistant/constants.dart';
-import 'package:fin_assistant/models/news_item.dart';
+import 'package:fin_assistant/models/one_news_item.dart';
 import 'package:fin_assistant/router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -57,7 +57,7 @@ class EducationPage extends StatelessWidget {
 
 class CourseItem extends StatelessWidget {
   const CourseItem({super.key, required this.course});
-  final NewsItem course;
+  final OneNewsItem course;
 
   @override
   Widget build(BuildContext context) {

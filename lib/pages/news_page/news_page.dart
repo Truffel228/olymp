@@ -1,9 +1,9 @@
 import 'package:fin_assistant/build_context_ext.dart';
 import 'package:fin_assistant/constants.dart';
 import 'package:fin_assistant/pages/home_page/widgets/news_item_widget.dart';
-import 'package:fin_assistant/pages/news_page/widgets/extra_new_card.dart';
+import 'package:fin_assistant/pages/news_page/widgets/additional_new_card.dart';
 import 'package:flutter/material.dart';
-export 'news_item_page.dart';
+export 'one_news_item_page.dart';
 
 class NewsPage extends StatelessWidget {
   const NewsPage({super.key});
@@ -31,7 +31,7 @@ class NewsPage extends StatelessWidget {
               child: Padding(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 16, vertical: 32),
-                child: ExtraNewCard(newsItem: Constants.extraNew),
+                child: AdditionalNewCard(newsItem: Constants.extraNew),
               ),
             ),
             SliverPadding(

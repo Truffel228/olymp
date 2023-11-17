@@ -1,12 +1,12 @@
 import 'package:fin_assistant/build_context_ext.dart';
-import 'package:fin_assistant/models/news_item.dart';
+import 'package:fin_assistant/models/one_news_item.dart';
 import 'package:fin_assistant/router.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class NewsItemWidget extends StatelessWidget {
   const NewsItemWidget({super.key, required this.newsItem});
-  final NewsItem newsItem;
+  final OneNewsItem newsItem;
 
   @override
   Widget build(BuildContext context) {

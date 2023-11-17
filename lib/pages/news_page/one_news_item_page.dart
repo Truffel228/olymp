@@ -1,15 +1,15 @@
 import 'package:fin_assistant/app_theme.dart';
 import 'package:fin_assistant/build_context_ext.dart';
-import 'package:fin_assistant/models/news_item.dart';
+import 'package:fin_assistant/models/one_news_item.dart';
 import 'package:flutter/material.dart';
 
-class NewsItemPage extends StatelessWidget {
-  const NewsItemPage({
+class OneNewsItemPage extends StatelessWidget {
+  const OneNewsItemPage({
     super.key,
     required this.newsItem,
   });
 
-  final NewsItem newsItem;
+  final OneNewsItem newsItem;
 
   @override
   Widget build(BuildContext context) {

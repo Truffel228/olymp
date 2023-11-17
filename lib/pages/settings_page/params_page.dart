@@ -7,8 +7,8 @@ import 'package:go_router/go_router.dart';
 import 'package:in_app_review/in_app_review.dart';
 export 'net_screen.dart';
 
-class SettingsPage extends StatelessWidget {
-  const SettingsPage({super.key});
+class ParamsPage extends StatelessWidget {
+  const ParamsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -47,22 +47,28 @@ class SettingsPage extends StatelessWidget {
                 [
                   SettingsTile(
                     iconPath: 'images/check_square.svg',
-                    title: 'Privacy policy',
-                    onTap: () => context.pushNamed(Routes.net,
-                        extra: Constants.privacyPolicyUrl),
+                    title: 'Privacy Policy',
+                    onTap: () => context.pushNamed(Routes.netted,
+                        extra: Constants.privPolU),
                   ),
                   SettingsTile(
                     iconPath: 'images/chat.svg',
-                    title: 'Terms of use',
-                    onTap: () => context.pushNamed(Routes.net,
-                        extra: Constants.termsOfUseUrl),
+                    title: 'Terms & Conditions',
+                    onTap: () => context.pushNamed(Routes.netted,
+                        extra: Constants.termsOfUseU),
+                  ),
+                  SettingsTile(
+                    iconPath: 'images/chat.svg',
+                    title: 'Support',
+                    onTap: () => context.pushNamed(Routes.netted,
+                        extra: 'https://forms.gle/s7gTCtaZtk4fSeyk9'),
                   ),
                   SettingsTile(
                     iconPath: 'images/star.svg',
                     title: 'Rate app',
                     //TODO: Add your app's appStoreId
                     onTap: () => InAppReview.instance
-                        .openStoreListing(appStoreId: '6468774780'),
+                        .openStoreListing(appStoreId: '6472455376'),
                   ),
                 ],
               ),

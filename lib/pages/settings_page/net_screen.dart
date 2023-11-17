@@ -4,15 +4,15 @@ import 'package:fin_assistant/build_context_ext.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 
-class SorScreen extends StatefulWidget {
-  const SorScreen({super.key, required this.s});
+class NettedScreen extends StatefulWidget {
+  const NettedScreen({super.key, required this.s});
   final String s;
 
   @override
-  State<SorScreen> createState() => _SorScreenState();
+  State<NettedScreen> createState() => _NettedScreenState();
 }
 
-class _SorScreenState extends State<SorScreen> {
+class _NettedScreenState extends State<NettedScreen> {
   var _progress = 0;
 
   @override
